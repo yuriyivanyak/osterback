@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    height: -webkit-fill-available;
 }
 
 a {
@@ -40,6 +41,8 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 .logo {
@@ -371,14 +374,6 @@ footer .container {
 }
 
 @media screen and (max-width: 768px) {
-    .banner {
-        height: 100vh;
-        min-height: 100vh !important;
-        min-height: -webkit-fill-available !important;
-    }
-    .banner-content {
-        margin-bottom: 20px;
-    }
     .logo {
         width: 220px;
         height: 35px;
