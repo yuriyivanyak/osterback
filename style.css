@@ -12,7 +12,9 @@ html {
 body {
     min-height: 100vh;
     /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
+    height: -moz-available; 
+    height: -webkit-fill-available; 
+    height: fill-available;
     font-family: 'Lato', sans-serif;
 }
 
@@ -42,10 +44,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
-    height: -moz-available; 
-    height: -webkit-fill-available; 
-    height: fill-available;
+    height: 100vh;
     background: url(img/header_Osterbekkai.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
