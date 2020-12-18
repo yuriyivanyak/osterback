@@ -374,6 +374,7 @@ footer .container {
    
     /* Banner */
     .banner {
+        height: 100vh;
         min-height: 100vh !important;
         min-height: -webkit-fill-available !important;
     }
