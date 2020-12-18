@@ -380,7 +380,7 @@ footer .container {
 
 @media screen and (max-width: 768px) {
     .banner-content {
-        margin: 20px;
+        margin-bottom: 20px;
     }
     .logo {
         width: 220px;
