@@ -361,6 +361,9 @@ footer .container {
 }
 
 @media screen and (max-width: 992px) {
+    .banner {
+        min-height: -webkit-fill-available;
+    }
     .banner-content {
         margin-bottom: 65px;
     }
