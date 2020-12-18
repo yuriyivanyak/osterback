@@ -361,6 +361,10 @@ footer .container {
 }
 
 @media screen and (max-width: 992px) {
+    .banner {
+        background-position: contain;
+        height: 100vh;
+    }
     .col-button {
         position: absolute;
         bottom: -50px;
