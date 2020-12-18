@@ -1,0 +1,464 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+    font-family: 'GommeSans-Regular';
+    src: url('font/font.woff2') format('woff2'), url('font/font.woff') format('woff');
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+/* Grid */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1065px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .user-form .col-lg-6:first-of-type {
+        padding-right: 40px;
+    }
+
+    .user-form .col-lg-6:nth-child(2) {
+        padding-left: 40px;
+    }
+}
+
+/* Top banner section styles */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url(img/header_Osterbekkai.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo {
+    width: 360px;
+    height: 70px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.banner-content {
+    margin-bottom: 165px;
+    padding:  25px;
+    background: #940a29;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: GommeSans-Regular;
+}
+.banner-header {
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.banner-subheader {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hr-line {
+    margin: 15px auto;
+    display: block;
+    width: 214px;
+    height: 1px;
+    background: #f6e9e9;
+}
+
+.banner-btn {
+    padding: 3px 48px;
+    background: #ffffff;
+    color: #940a29;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 50px;
+    margin: 0 auto 60px auto;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.banner-btn:hover {
+    color:#fff;
+    background: #940a29;
+}
+
+.arrow-down-link  {
+    margin-top: -15px !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.arrow-down {
+    margin: 0 auto;
+    position: absolute;
+    top: -25px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background: #dfdee0;
+    border-radius: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.arrow-down img {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-down-link:hover {
+    cursor: pointer;
+}
+
+/*  Forms styles */
+
+.form-container {
+    position: relative;
+    width: 100%;
+}
+
+.form-container p {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 300;
+}
+
+.infos-container {
+    padding-top: 75px;
+    padding-bottom: 55px;
+    background-color: #dfdee0;
+    position: relative;
+}
+.infos-container::after {
+    content: '';
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    background: #dfdee0;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+.questions-container {
+    padding-top: 79px;
+    padding-bottom: 60px;
+    background-color: #f1f1f1;
+}
+
+.questions-container p {
+    margin-bottom: 20px;
+}
+
+.form-title {
+    margin-bottom: 22px;
+    line-height: 44px;
+    color: #950a2a;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.user-form label {
+    font-size: 14px;
+    color: #64646e;
+    font-weight: 300;
+    margin-bottom: 0;
+    width: 100%;
+}
+.user-form input {
+    font-size: 12px;
+     /* padding-top: 2px; 
+     padding-bottom: 2px;  */
+    border: 0;
+    border-radius: 22px;
+    background-color: #ffffff;
+    color: #666666;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding: 2px 14px;
+    letter-spacing: 1px; 
+}
+
+.form-divider {
+    color: #940a29;
+    opacity: 1;
+    margin: 10px 0 10px;
+}
+
+.text-red {
+    color:  #940a29 ;
+    font-weight: 300;
+}
+
+.valid {
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    color: #940a29;
+    opacity: 0;
+}
+.is-invalid {
+   opacity: 1;
+}
+
+.button-submit {
+    padding: 3px 0;
+    background-color: #940a29;
+    border-radius: 22px;
+    color: #fff;
+    border: 0;
+    width: 145px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.button-submit:hover {
+    color: #fff;
+}
+
+/*  Radio */
+
+.btn-outline-secondary {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    font-size: 12px !important;
+    border: none;
+    border-radius: 22px;
+    background: #fff;
+    color: #000000;
+    font-weight: 300;
+}
+
+.btn-outline-secondary:active {
+    background: #8f8f92;
+}
+
+/*  ===== Subform ====== */
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background: #940a29;
+    border: none;
+    color: #fff;
+}
+textarea {
+    color: #64646e;
+    font-weight: 300;
+    padding: 15px 20px !important;
+    font-size: 14px !important;
+}
+
+.checkbox-subform {
+    margin-right: 10px ;
+}
+.form-switch {
+    padding-left: 32px;
+    margin-top: 8px;
+    margin-bottom: 36px;
+    display: flex;
+}
+.form-switch-label {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #666666;
+    font-weight: 300;
+}
+
+.form-check-input {
+    width: 30px;
+    height: 18px;
+    background-size: 13px 13px;
+}
+
+.form-check-input:checked {
+    background-color: #64646e;
+    border-color: #64646e;
+    background-size: 18px 14px;
+}
+
+/*/ check box /*/
+.check-box {
+    padding: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+.check-box-input {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    border-radius: 22px;
+    background: #fff;
+    color: #000000;
+    font-weight: 300;
+}
+
+footer {
+    margin-top: 65px;
+    padding-top: 75px;
+    padding-bottom: 85px;
+    background: #f1f1f1;
+}
+footer .container {
+    display: flex;
+    justify-content: center;
+}
+.footer-col {
+    margin-right: 86px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-col:last-child {
+    margin-right: 0;
+}
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 26px;
+}
+.footer-list-title {
+    letter-spacing: 1px;
+    color: #64646E;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer-img {
+    display: flex;
+    margin-top: auto;
+    max-height: 50px;
+    text-align: left;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-list-item, .footer-list-item a {
+    color: #64646E;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 992px) {
+    .col-button {
+        position: absolute;
+        bottom: -50px;
+    }
+    .questions-container {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+    /* Banner */
+    .logo {
+        width: 220px;
+        height: 35px;
+        margin-top: 40px;
+        margin-left: 12px;
+    }
+    .banner-header {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .banner-subheader {
+        font-size: 13px;
+    }
+
+    .banner-btn {
+        font-size: 15px;
+    }
+    .form-title {
+        margin-bottom: 23px;
+    }
+    .btn-outline-secondary{
+        font-size: 14px !important;
+    }
+    .underline label {
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .infos-container {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    .questions-container {
+        padding-top: 55px;
+    }
+    .questions-container p {
+        margin-bottom: 28px;
+    }
+    .checkbox-btn {
+        width: 100%;
+    }
+    .checkbox-subform {
+        margin-bottom: 10px;
+    }
+    .sm-checkbox {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    /*  Underline */
+    .underline  label {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #940a29;
+    }
+    .form-title {
+        font-size: 28px;
+    }
+    .user-form input {
+        font-size: 14px;
+    }
+    /* Footer */
+    footer {
+        margin-top: 58px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-list-title {
+        font-size: 18.7px;
+    }
+    .footer-list-item {
+        font-size: 14px;
+    }
+    .footer-img {
+        display: none;
+    }
+    .is-invalid {
+        margin-bottom: 6px;
+    }
+}
+
+
+
+

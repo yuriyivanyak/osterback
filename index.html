@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="de-DE">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+      <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- Top banner section -->
+    <div class="banner ">
+      <!-- Logo image -->
+      <img src="img/Logo_Osterbekkai.svg" class="logo" alt="Logo">
+
+      <div class="container banner-container">
+        <div class="banner-content">
+          <h1 class="banner-header mb-0">Vermietungsstart ab Herbst 2021</h1>
+          <span class="hr-line"></span>
+          <p class="banner-subheader mb-0">132 Wohnungen, davon 400 öffentlich Gefördert</p>
+        </div>
+
+        <button class="btn banner-btn" id="btnScroll">Jetzt vormerken lassen</button>
+      </div>
+    </div>
+
+
+    <div class="form-container infos-container" id="form">
+      <div class="arrow-down">
+        <a class="arrow-down-link" id="linkScroll">
+          <img src="img/arrow_down.svg" alt="arrow down">
+        </a>
+      </div>
+
+      <div class="container">
+        <h2 class="form-title">PERSÖNLICHE DATEN</h2>
+
+        <div class="form row user-form">
+          <!-- Left form Column -->
+          <div class="col-12 col-lg-6">
+            <div class="row mb-0 mb-md-4">
+              <div class="col-12 col-md-6 order-0 order-md-0 underline">
+                <label class="form-label">ANREDE <span class="text-red">*</span></label>
+              </div>
+              <div class="col-12 col-md-6 order-2  order-md-1 underline">
+                <label class="form-label ">VORNAME</label>
+              </div>
+
+              <div class="col-12 d-none d-md-block  order-md-2">
+                <hr class="form-divider">
+              </div>
+
+              <div class="col-12 col-md-6 order-1 order-md-3">
+                <div class="input-group">
+                  <div class="form-check check-box">
+                    <input type="radio" class="btn-check" name="options-outlined" id="check-frau" autocomplete="off" checked>
+                    <label class="btn radio-check btn-outline-secondary check-box-input" for="check-frau">FRAU</label>
+                  </div>
+                  <div class="form-check check-box">
+                    <input type="radio" class="btn-check" name="options-outlined" id="check-herr" autocomplete="off">
+                    <label class="btn radio-check btn-outline-secondary check-box-input" for="check-herr">HERR</label>
+                  </div>
+                </div>
+                <div class="valid">Error</div>
+              </div>
+
+              <div class="col-12 col-md-6 order-3 order-md-4">
+                <input type="text" class="form-control" placeholder="OPTIONAL">
+                <div class="valid">Error</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 order-0 order-md-0 underline">
+                <label for="inputNachname" class="form-label">NACHNAME <span class="text-red">*</span></label>
+              </div>
+              <div class="col-12 col-md-6 order-2 order-md-1 underline">
+                <label for="inputEmail" class="form-label">E-MAIL-ADRESSE <span class="text-red">*</span></label>
+              </div>
+              <div class="col-12 d-none d-md-block order-2">
+                <hr class="form-divider">
+              </div>
+
+              <div class="col-12 col-md-6 order-1 order-md-3 mb-3">
+                <input type="text" class="form-control">
+                <div class="valid">Error</div>
+              </div>
+
+              <div class="col-12 col-md-6 order-3 order-md-4 mb-3">
+                <input type="email" class="form-control">
+                <div class="valid">Error</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>
+                  Mit dieser Eingabe nehmen Sie den Osterbekkai-Service in Anspruch. Sie er-
+                  halten anhand der von Ihnen eingegebenen Daten genutzten Services und auf
+                  Grundlage unseres Geschäftszwecks auf Ihr Anliegen ausgerichtete Informa-tionen. Diesem Service können Sie jederzeit unter datenschutz@xyx.de wider-
+                  sprechen. Weitere Informationen finden Sie in der Datenschutzerklärung.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--  Right form column -->
+          <div class="col-12 col-lg-6">
+            <div class="row mb-0 mb-md-4">
+              <div class="col-12 col-md-6 order-0 order-md-0 underline">
+                <label class="form-label">TELEFON <span class="text-red">*</span></label>
+              </div>
+              <div class="col-12 col-md-6 order-2  order-md-1 underline">
+                <label class="form-label ">STRASSE, NR.</label>
+              </div>
+
+              <div class="col-12 d-none d-md-block  order-md-2">
+                <hr class="form-divider">
+              </div>
+
+              <div class="col-12 col-md-6 order-1 order-md-3">
+                <input type="text" class="form-control is-invalid" placeholder="OPTIONAL">
+                <div class="valid is-invalid">Error</div>
+              </div>
+
+              <div class="col-12 col-md-6 order-3 order-md-4">
+                <input type="text" class="form-control" placeholder="OPTIONAL">
+                <div class="valid">Error</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 order-0 order-md-0 underline">
+                <label for="inputNachname" class="form-label">ORT <span class="text-red">*</span></label>
+              </div>
+              <div class="col-12 col-md-6 order-2 order-md-1 underline">
+                <label for="inputEmail" class="form-label">PLZ</label>
+              </div>
+              <div class="col-12 d-none d-md-block order-2">
+                <hr class="form-divider">
+              </div>
+
+              <div class="col-12 col-md-6 order-1 order-md-3 mb-3">
+                <input type="text" class="form-control" id="inputNachname">
+                <div class="valid">Error</div>
+              </div>
+
+              <div class="col-12 col-md-6 order-3 order-md-4 mb-3">
+                <input type="email" class="form-control" id="inputEmail">
+                <div class="valid">Error</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>
+                  Ihre persönlichen Daten werden geschützt. Wir gewährleisten den größtmög-
+                  lichen Schutz Ihrer persönlichen Daten und geben sie nicht an Dritte weiter.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container questions-container" id="form-anfrage">
+      <div class="container">
+        <h2 class="form-title">IHRE ANFRAGE</h2>
+
+        <div class="form row user-form position-relative">
+          <!-- Left  column -->
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-12 underline">
+                <label for="inputNachname" class="form-label">FÜR WELCHE WOHNUNG INTERESSIEREN SIE SICH? <span class="text-red">*</span></label>
+              </div>
+              <div class="col-12 d-none d-md-block">
+                <hr class="form-divider">
+              </div>
+
+              <div class="col-12 mb-3 mb-md-4">
+                <div class="input-group">
+                  <div class="form-check check-box sm-checkbox">
+                    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                    <label class="checkbox-btn btn btn-outline-secondary check-box-input sm-checkbox" for="btn-check-outlined">FREIFINANZIERT</label>
+                  </div>
+
+                  <div class="form-check check-box sm-checkbox">
+                    <input type="checkbox" class="btn-check" id="btn-check-2-outlined" autocomplete="off">
+                    <label class="checkbox-btn btn btn-outline-secondary check-box-input " for="btn-check-2-outlined">ÖFFENTLICH GEFÖRDERT</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 underline">
+                <label for="inputNachname" class="form-label">IHRE NACHRICHT <span class="text-red">*</span></label>
+              </div>
+              <div class="col-12 d-none d-md-block">
+                <hr class="form-divider">
+              </div>
+              <div class="col-12 mb-4">
+                <textarea class="form-control" placeholder="Ich interessiere mich für Ihr Angebot. Bitte nehmen Sie Kontakt mit mir auf." id="exampleFormControlTextarea1" rows="4"></textarea>
+              </div>
+              <div class="col-12 col-button">
+                <button class="btn button-submit">ANFRAGE SENDEN</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right  culumn -->
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-12 underline">
+                <label for="inputNachname" class="form-label">DATENSCHUTZ<span class="text-red">*</span></label>
+              </div>
+              <div class="col-12 d-none d-md-block">
+                <hr class="form-divider">
+              </div>
+              <div class="col-12">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label form-switch-label" for="flexSwitchCheckChecked">Ich habe die Datenschutzerklärung gelesen und zur Kenntnis genommen</label>
+                </div>
+
+                <p>
+                  Wenn Sie über das Kontaktformular Informationen zum Projekt anfordern, erfolgt die Weitergabe der Daten an unseren Vertriebspartner Thomas Klinke Immobi-
+                  lien GmbH, ausdrücklich beschränkt auf dieses Neubauprojekt. Wir versichern
+                  Ihnen, dass eine darüber hinausgehende Weitergabe Ihrer Daten an Dritte ohne
+                  Ihre Zustimmung nicht stattfindet. Abhängig von den von Ihnen bereitgestellten
+                  Dateninformationen, erfolgt die Kontaktaufnahme durch unseren Vertriebs‐
+                  partner schriftlich, per E-Mail und/oder Telefon. Im Übrigen können Sie jederzeit
+                  Ihre Daten löschen lassen und einer Speicherung widerrufen.
+                </p>
+                <a href="#"><span class="text-red">*Pflichtfelder</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-col">
+          <h5 class="footer-list-title">Vermietung durch:</h5>
+          <ul class="footer-list">
+            <li class="footer-list-item">Thomas Klinke Immobilien GmbH</li>
+            <li class="footer-list-item">Hamburger Straße 11</li>
+            <li class="footer-list-item">Mundsburg Office Tower – 20. OG</li>
+            <li class="footer-list-item">22083 Hamburg</li>
+            <li class="footer-list-item">Telefon: (040) 79 69 68 50</li>
+          </ul>
+          <a class="footer-img " href="HTTPS://WWW.TK-IMMO.DE"><img class="footer-img" src="img/TKI_Logo_RGB.svg" alt="TKI logo"></a>
+
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-list-title">Projektentwicklung</h5>
+          <ul class="footer-list">
+            <li class="footer-list-item">E.B.K. Immobilien GmbH</li>
+            <li class="footer-list-item">Lademannbogen 127</li>
+            <li class="footer-list-item">22339 Hamburg</li>
+          </ul>
+
+          <a  class="footer-img " href="#"><img class="footer-img" src="img/Logo_EBK.svg" alt="EBK logo"></a>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-list-title">Rechtliches</h5>
+          <ul class="footer-list">
+            <li class="footer-list-item"><a href="#">Impressum</a></li>
+            <li class="footer-list-item"><a href="#">Datenschutz</a></li>
+            <li class="footer-list-item"><a href="#">AGB</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("#btnScroll").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#form-anfrage").offset().top
+          }, 180);
+      });
+      $("#linkScroll").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#form").offset().top
+          }, 180);
+      });
+    </script>
+  </body>
+</html>
