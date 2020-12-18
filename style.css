@@ -361,12 +361,6 @@ footer .container {
 }
 
 @media screen and (max-width: 992px) {
-    .banner {
-        min-height: -webkit-fill-available;
-    }
-    .banner-content {
-        margin-bottom: 65px;
-    }
     .col-button {
         position: absolute;
         bottom: -50px;
@@ -379,6 +373,9 @@ footer .container {
 @media screen and (max-width: 768px) {
    
     /* Banner */
+    .banner {
+        height: calc(100vh - calc(100vh - 100%));
+    }
     .logo {
         width: 220px;
         height: 35px;
