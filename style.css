@@ -371,8 +371,6 @@ footer .container {
 }
 
 @media screen and (max-width: 768px) {
-   
-    /* Banner */
     .banner {
         height: 100vh;
         min-height: 100vh !important;
